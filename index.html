@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK.</title>
+    
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/x-img.png" type="image/x-icon">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        <h2>MK.</h2>
+        <nav>
+            <a class="darkerText" href="https://github.com/mnasrikhaled" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="darkerText" href="https://www.kaggle.com/mnasrikhaled" target="_blank"><i class="fa-brands fa-kaggle"></i> Kaggle</a>
+            <a class="darkerText" href="https://www.linkedin.com/in/mnasrikhaled/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <!-- Introduction Section -->
+            <div class="nameContainer">
+                <h2>M'NASRI KHALED</h2>
+                <p class="darkerText">I write code & build projects.</p>
+            </div>
+
+            <!-- Profile and Stats -->
+            <div class="statsContainer">
+                <div class="imgContainer">
+                    <img src="assets/portfolio-img3.png" alt="portfolio-img">
+                </div>
+                <div class="stats darkerText">
+                    <div>
+                        <div><i class="fa-brands fa-react"></i></div>
+                        <p>10 GitHub Repositories</p>
+                    </div>
+                    <div>
+                        <div><i class="fa-brands fa-node-js"></i></div>
+                        <p>10 Followers</p>
+                    </div>
+                    <div>
+                        <div><i class="fa-brands fa-python"></i></div>
+                        <p>07 Commits This Year</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="aboutMe">Hi, I'm Mnasri Khaled, a Full-Stack developer who loves building cool things with code.</p>
+            
+            <!-- Email Section -->
+            <div>
+                <a class="outreach">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p class="Send">Email me</p>
+                </a>
+
+                <div class="alert hide">
+                    <span class="fa-solid fa-envelope"></span>
+                    <span class="msg"> mnasrikhaled00@gmail.com</span>
+                    <span class="close-btn">
+                        <span class="fa-solid fa-xmark"></span>
+                    </span>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projectContainer">
+            <p class="darkerText headerText"><i class="fa-regular fa-clock"></i> Latest Projects</p>
+            
+            <div class="projectItem">
+                <div>
+                    <p class="darkerText">Nov 24, 2024</p>
+                    <p>Cafe Foundou &nbsp; مقهى فوندوا - Un endroit adéquat pour la révision et la préparation des cours avec un accès Wi-Fi !</p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="" class="linkItem">
+                            <div><i class="fa-solid fa-code-branch"></i></div>
+                            <p>GitHub</p>
+                        </a>
+                        <a target="_blank" href="" class="linkItem">
+                            <div><i class="fa-solid fa-bolt"></i></div>
+                            <p>Live</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/cafe-img.png" alt="cafe-img">
+                </div>
+            </div>
+            
+            <div class="projectItem">
+                <div>
+                    <p class="darkerText">May 8, 2024</p>
+                    <p>Price Wise - A price comparison app to guide you in searching & buying tech products.</p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="" class="linkItem">
+                            <div><i class="fa-solid fa-code-branch"></i></div>
+                            <p>GitHub</p>
+                        </a>
+                        <a target="_blank" href="" class="linkItem">
+                            <div><i class="fa-solid fa-bolt"></i></div>
+                            <p>Live</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/price-wise-img.png" alt="price-wise-img">
+                </div>
+            </div>
+
+            <div class="projectItem">
+                <div>
+                    <p class="darkerText">Nov 2, 2024</p>
+                    <p>Start Mina - A dashboard in Power BI for global analysis of human resources.</p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="" class="linkItem">
+                            <div><i class="fa-solid fa-code-branch"></i></div>
+                            <p>GitHub</p>
+                        </a>
+                        <a target="_blank" href="" class="linkItem">
+                            <div><i class="fa-solid fa-bolt"></i></div>
+                            <p>Live</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/dashboard-img.png" alt="dashboard-img">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Scripts -->
+    <script>
+        $('.outreach').click(function(){
+            $('.alert').removeClass("hide").addClass("show showAlert");
+            setTimeout(function(){
+                $('.alert').addClass("hide").removeClass("show");
+            }, 30000);
+        });
+
+        $('.close-btn').click(function(){
+            $('.alert').addClass("hide").removeClass("show");
+        });
+    </script>
+</body>
+</html>
